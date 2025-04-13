@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "docs/angular-signal",
+            "outputPath": "dist/angular-signal",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -78,6 +78,9 @@
           "options": {
             "browserTarget": "angular-signal:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy"
         },
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
